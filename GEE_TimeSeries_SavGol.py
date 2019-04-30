@@ -1,7 +1,7 @@
 # Use it with Google Colab
-!pip install google-api-python-client
-!pip install earthengine-api
-!earthengine authenticate
+# !pip install google-api-python-client
+# !pip install earthengine-api
+# !earthengine authenticate
 
 from datetime import datetime as dt
 from scipy import signal
