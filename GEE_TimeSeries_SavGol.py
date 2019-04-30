@@ -45,7 +45,7 @@ def timeSeriesSavGol(imageCollection,window,order):
     if "nd" in fp:
       index.append(fp["nd"])
       date.append(fp["system:time_start"])
-    # There isn't
+    # There is no data
     else:
       index.append(np.nan)
       date.append(fp["system:time_start"])
