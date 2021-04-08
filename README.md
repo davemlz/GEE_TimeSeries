@@ -7,6 +7,11 @@ Example that shows how to extract image collection values for a feature collecti
 A better version of this function was implemented in [eemont](https://github.com/davemlz/eemont) as an extended method for the ee.ImageCollection object:
 
 ```python
+import ee, eemont
+
+ee.Authenticate()
+ee.Initialize()
+
 f1 = ee.Feature(ee.Geometry.Point([3.984770,48.767221]).buffer(50),{'ID':'A'})
 f2 = ee.Feature(ee.Geometry.Point([4.101367,48.748076]).buffer(50),{'ID':'B'})
 fc = ee.FeatureCollection([f1,f2])
